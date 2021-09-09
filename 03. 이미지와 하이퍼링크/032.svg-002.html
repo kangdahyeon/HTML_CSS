@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>scr="js/modernizr-custom.js"</script>
+</head>
+<body>
+    <!--h1+img+script-->
+    <h1>SVG 이미지</h1>
+    <img src="image/muffin.svg" alt="">
+    <script>
+        // 위에서 만든 img태그를 변수로 담음
+        var img = document.querySelector("img");
+        // modernizr-custom.js를 이용하여 svg 파일형식을 지원하는 브라우저인지 체크
+        if(!Modernizr.svg) {
+            //svg 파일형식을 지원하지 않을 경우 img태그에 png파일 삽입.
+            img.setAttribute("src", "image/muffin.png");
+        }
+    </script>
+    
+</body>
+</html>

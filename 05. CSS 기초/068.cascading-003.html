@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 시트</title>
+    <style>
+       p { 
+           color: green;
+       }
+       /*마지막으로 선언된 스타일이 먼저 선언된 스타일을 덮어 씀*/
+       p {
+           color: rgb(78, 218, 171);
+       }
+
+    </style>
+</head>
+<body>
+    <!-- img+h1+(ul>li*3)-->
+    <img src="images/sydney.png" alt="시드니 오페라 하우스">
+    <h1>세계 3대 미항</h1>
+        <p>시드니, 호주</p>
+        <p>리우데자네이루, 브라질</p>
+        <p>나폴리, 이탈리아</p>
+</body>
+</html>

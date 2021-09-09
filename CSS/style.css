@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*박스 영역은 테두리까지 지정*/
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+#container {
+    margin: 0 auto;     /*화면 중앙에 배치*/
+    width: 1200px;      /*너비 지정*/
+}
+/* 헤더 영역 */
+header {
+    margin-left: 40px;
+    width: 100%;
+    height: 100px;
+    background-color: #FFF;
+}
+
+/* 로고 영역 */
+#logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+    line-height: 100px;
+    padding-left: 60px;
+}
+#logo button {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+#logo h1 {
+    font-family: 'Anton', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(71, 25, 4);
+}
+/* 내비게이션 영역 */
+nav {
+    float: right;
+    width: 900px;
+    height: 100px;
+    padding-top: 40px;
+    margin-top: px;
+    margin-right: 40px;
+}
+#topMenu {
+    height: 60px;
+}
+#topMenu > li {
+    float: right;
+    position: relative; /* 서브메뉴를 absolute로 만들기 위해 부모요소를 relative로 지정*/
+}
+#topMenu > li > a {
+    display: block;
+    color: rgb(71, 25, 4);
+    font-weight: 600;
+    padding: 20px 60px;
+}
+#topMenu > li > a > span {
+    font-size: 0.5em;
+}
+#topMenu > li > a:hover {
+    color: rgb(235, 208, 90);
+}
+#topMenu > li > ul {
+    display: none;
+    position: absolute;
+    width: 160px;
+    background-color: rgba(255,255,255,0);
+    left: 20px;
+    margin: 0;
+}
+#topMenu > li > ul > li {
+    padding: 10px 10px 10px 30px;
+}
+#topMenu > li > ul > li > a {
+    font-size: 14px;
+    padding: 10px;
+    color: #000;
+}
+#topMenu > li:hover > ul {
+    display: block; /* 메인 메뉴 항목 위로 오버하면 서브메뉴 표시*/
+    z-index: 10;    /* 슬라이드 쇼에 가리지 않게 조절 */
+}
+#topMenu > li > ul > li > a:hover {
+    color: #f00;
+}
+/* 이미지 슬라이드쇼 영역*/
+#slideShow {
+    clear: both;
+    width: 100%;
+    height: 400px;
+    overflow: hidden; /*영역 넘치면 감춤*/
+    position: relative;
+}
+#slides {
+    position: absolute;
+}
+#slides > img {
+    width: 100%; 
+    float: left;
+}
+button {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    border: none;
+    padding: 20px;
+    background-color: transparent;
+    color: #000;
+    font-weight: 800;
+    font-size: 24px;
+    opacity: 0.5;
+}
+#prev {
+    left: 0;
+}
+#next {
+    right: 0;
+}
+button:hover {
+    /* background-color: #222; */
+    color: #fff;
+    opacity: 0.6;
+    cursor: pointer;
+}
+button:focus {  /* 아웃라인 없앰 */
+    outline: 0;
+}
+/* 콘텐츠 영역 */
+#contents {
+    width: 100%;
+    height: 300px;
+}
+
+/*탭 메뉴 영역*/
+#tapMenu {
+    float: left;
+    width: 600px;
+    height: 100%;
+    background-color: violet;
+}
+
+/* 퀵 링크 영역 */
+#links {
+    float: right;
+    width: 600px;
+    height: 100%;
+    background-color: skyblue;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid rgb(112, 112, 112);
+}
+#bottomMenu {
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+#bottomMenu ul {
+    margin-top: 15px;
+}
+#bottomMenu ul li {
+    float: left;
+    padding: 5px 20px;
+    border-right: 1px solid #ddd; /*항목 오른쪽에 세로선*/
+}
+#bottomMenu ul li:last-child {
+    border-right: none;
+}
+#bottomMenu ul li a, #bottomMenu ul li a:visited {
+    font-size: 15px;
+    color : #666;
+}
+#sns {
+    position: absolute;
+    right: 5px;
+}
+#sns ul li {
+    border: none;
+    padding: 5px;
+}

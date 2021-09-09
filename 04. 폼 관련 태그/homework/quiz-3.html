@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품주문서</title>
+    <style>
+       fieldset {
+           color: blueviolet;
+       }
+       label {
+           color: black;
+       }
+       ul {list-style-type: none;}
+			li { line-height:30px;}
+
+    </style>
+</head>
+<body>
+    <!-- h1+form>(h3>((label+input)*2)+h3>((label+input)*3)+h3>((input+label)*3))-->
+    <h1>상품 주문서</h1>
+    <form action="">
+        <fieldset>
+            <legend><b>개인 정보</b></legend>
+            <ul>
+                <li>
+                    <label for="name"><b>이름</b></label>
+                    <input type="text" id="name" placeholder="여백없이 입력" required>
+                </li>
+                <li>
+                    <label for="phone"><b>연락처</b></label>
+                    <input type="tel" id="phone" placeholder="연락 가능한 번호">
+                </li>
+            </ul>
+        </fieldset>
+            
+        <fieldset>
+        <legend><b></b>배송지 정보</legend>
+        <ul>
+            <li>
+                <label for=""><b>주소</b></label>
+                <input type="text" size="40">
+            </li>
+            <li>
+                <label for="phone"><b>전화번호</b></label>
+                <input type="tel" id="phone">
+            </li>
+            <li>
+                <label for=""><b>메모</b></label>
+                <textarea name="" rows="3" cols="20"></textarea>
+            </li>
+        </ul>
+        </fieldset>
+        <fieldset>
+        <legend>주문 정보</legend>
+        <ul>
+            <li>
+                <input type="checkbox">
+                <label for="">과테말라 안티구아 (100g)</label><input type="number" width="10">개
+            </li>
+            <li>
+                <input type="checkbox">
+                <label for="">인도네시아 만델링 (100g)</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label for="">탐라는도다(블렌딩) (100g)</label>
+            </li>
+        </ul>
+        </fieldset>
+    </form>
+    
+    
+</body>
+</html>
